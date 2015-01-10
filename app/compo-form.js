@@ -22,6 +22,10 @@ module.exports = React.createClass({
         var message = this.refs.message.getDOMNode().value.trim()
         if (message)  this.props.onCompoFormSubmit(message)
         this.refs.message.getDOMNode().value = ''
+        this.refs.message.getDOMNode().focus()
+    }
+  , componentDidMount: function () {
+        this.refs.message.getDOMNode().focus()
     }
 })
 
