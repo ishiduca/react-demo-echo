@@ -30,7 +30,9 @@ module.exports = React.createClass({
             }
 
             var data = this.state.data
-            data.push(_data)
+// refs. http://qiita.com/koba04/items/63267bcc918d76ac8767
+//            data.push(_data)
+            data = data.concat([ _data ] )
 
             this.setState({data: data})
         }.bind(this))
