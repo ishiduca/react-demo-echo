@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "build-js": "browserify -t reactify ./app/main.js -o ./public/js/bundle.js",
-    "build": "npm build-js",
+    "build": "npm run build-js",
     "app": "NODE_PATH=lib node app.js &",
     "start": "npm run build && npm run app"
   },
