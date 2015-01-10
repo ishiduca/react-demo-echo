@@ -1,0 +1,31 @@
+{
+  "name": "react-demo-echo",
+  "version": "0.0.1",
+  "scripts": {
+    "build-js": "browserify -t reactify ./app/main.js -o ./public/js/bundle.js",
+    "build": "npm build-js",
+    "app": "NODE_PATH=lib node app.js &",
+    "start": "npm run build && npm run app"
+  },
+  "dependencies": {
+    "express": "^4.10.7",
+    "hjs": "0.0.6",
+    "node-uuid": "^1.4.2",
+    "react": "^0.12.2",
+    "shoe": "0.0.15"
+  },
+  "config": {
+    "server": {
+      "port": 3000
+    },
+    "static": {
+      "root": "/public"
+    },
+    "sock": {
+      "url": "/echo"
+    }
+  },
+  "devDependencies": {
+    "reactify": "^0.17.1"
+  }
+}

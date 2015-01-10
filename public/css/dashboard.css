@@ -1,0 +1,15 @@
+#message {
+    width : 100%;
+}
+
+p.message {
+    display : inline-block;
+    padding: 0 6px;
+    margin: 0;
+}
+span.meta {
+    display: inline-block;
+    padding: 0 6px;
+    font-size : smaller;
+    color: #aaaaaa;
+}
